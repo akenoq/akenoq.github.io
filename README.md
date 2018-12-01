@@ -3,7 +3,6 @@
 1. Создайте репозитории с ресурсами.
 
 Название репозитория в поле `Repository name` должно быть вида `<your_username>.github.io`
-
 > Пример: `akenoq.github.io`
 
 При создании поставить галочку `Initialize this repository with a README`
