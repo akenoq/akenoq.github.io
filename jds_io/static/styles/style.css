@@ -1,0 +1,42 @@
+.topBar {
+    background: #1d4d7e!important;
+}
+
+.topBarLabel {
+    color: #84dc34!important;
+}
+
+.topBarLabel:hover {
+    color: #ffffff!important;
+}
+
+.topBarMobileBtn {
+    background: #84dc34!important;
+}
+
+.greenChar {
+    color: #84dc34;
+}
+
+.buttonLanding {
+    color: #84dc34!important;
+    border-color: #84dc34!important;
+    border-width: 2px!important;
+    outline: none!important;
+}
+
+.buttonLanding:hover {
+    cursor: pointer;
+    border-color: #84dc34!important;
+    background: #84dc34;
+    border-width: 2px!important;
+    color: white!important;
+}
+
+.buttonLanding:active {
+    cursor: pointer;
+    border-color: #84dc34!important;
+    background: #84dc34;
+    border-width: 2px!important;
+    color: white!important;
+}
