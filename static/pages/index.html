@@ -64,7 +64,7 @@
         }
 
         .contact_hidden-icon {
-            color: #50789f;
+            opacity: 0;
         }
 
         .big-img {
@@ -77,46 +77,210 @@
             max-width: 100%;
             height: auto;
         }
+
+        .carousel-box {
+            margin: 7px
+        }
+
+        footer {
+            background: rgba(7, 45, 88, 0.85) !important;
+        }
+
+        .navbar.fixed-top {
+            background: rgba(7, 45, 88, 0.95) !important;
+        }
+
+        .navBtn {
+            border-color: #ffffff;
+            color: #ffffff;
+            border-radius: 20px;
+        }
+
+        .navBtn:hover {
+            background: #84dc34;
+        }
+
+        .nav-link:hover {
+            cursor: pointer;
+        }
+
+        .navbar-brand:hover {
+            cursor: pointer;
+        }
+
+        .bg-light.green {
+            background: #c6efa2 !important;
+        }
+
+        .green-badge {
+            padding: 7px;
+            color: #fff;
+            background-color: #5ea743;
+            width: 2em;
+            margin-right: 7px;
+        }
+
+        .white-badge {
+            padding: 7px;
+            color: #fff;
+            background-color: #2196F3;
+            width: 2em;
+            margin-right: 7px;
+        }
+
+        .invis-space {
+            opacity: 0;
+        }
+
+        .no-select {
+            -webkit-user-select: none;
+            -moz-user-select: none;
+        }
+
+        .yellow-color .fa {
+            color: #1d4d7e;
+            background: #84dc34;
+            width: 2em;
+            height: 2em;
+            padding-top: 6px;
+            border-radius: 1em;
+            font-size: 12px;
+        }
+
+        .yellow-color .hobby {
+            color: #1d4d7e;
+            background: #DCD634;
+        }
+
+        img.course1 {
+            background: #FFBD27;
+        }
+
+        #theme_plan_full .card-header {
+            padding: 0;
+        }
+
+        #theme_plan_full .card {
+            border: none;
+        }
+
+        #theme_plan_full .course1-header {
+            background: #FFBD27;
+        }
+
+        #theme_plan_full .course1-body {
+            background: #fff7b2;
+        }
+
+        #theme_plan_full .course2-header {
+            background: #41C4FF;
+        }
+
+        #theme_plan_full .course2-body {
+            background: rgb(188, 233, 253);
+        }
+
+        #theme_plan_full .course3-header {
+            background: #84DC34;
+        }
+
+        #theme_plan_full .course3-body {
+            background: #c6efa2;
+        }
+
+        #theme_plan_full .card {
+            background: rgba(220, 214, 52, 0);
+        }
+
+        #theme_plan_full .card-body {
+            border-radius: 0 0 calc(.5rem - 1px) calc(.5rem - 1px);
+        }
+
+        #theme_plan_full .card-header:first-child {
+            border-radius: calc(.5rem - 1px) calc(1rem - 1px) 0 0;
+        }
+
+        #theme_plan_full .card-img-top {
+            border-top-left-radius: calc(.5rem - 1px);
+            border-top-right-radius: calc(.5rem - 1px);
+        }
+
+        .cont:nth-child(2n+1) {
+            background: #1d4d7e;
+            color: white;
+        }
+
+        .cont:nth-child(2n) {
+            background: #50789f;
+            color: white;
+        }
+
+        #benefit_info img {
+            border-radius: calc(.5rem - 1px);
+        }
+
+        #benefit_info .imgBox {
+            padding-bottom: 20px;
+        }
+
+        #traectory a {
+            color: #DCD634;
+        }
+
+        #traectory .imgBox {
+            padding-bottom: 20px;
+        }
     </style>
 </head>
 <body>
 
 <div>
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light topBar">
-        <span id="nav-logo-btn" class="navbar-brand">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light topBar fixed-top">
+        <a href="#" id="nav-logo-btn" class="navbar-brand">
             <img src="../images/buttons.png" height="45px" class="d-inline-block align-top" alt="">
-        </span>
+        </a>
         <button class="navbar-toggler topBarMobileBtn" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarText">
+        <div class="collapse navbar-collapse no-select" id="navbarText">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
-                    <a class="btnLink nav-link topBarLabel" href="#edu_icon">Чему научим</a>
+                    <a class="btnLink nav-link topBarLabel" data-href="#edu_icon">Чему<span class="invis-space">-</span>научим</a>
                 </li>
                 <li class="nav-item">
-                    <a class="btnLink nav-link topBarLabel" href="#bmstu_prof">О нас</a>
+                    <a class="btnLink nav-link topBarLabel" data-href="#benefit_info">Наши<span class="invis-space">-</span>преимущества</a>
+                </li>
+                <!--<li class="nav-item">-->
+                    <!--<a class="btnLink nav-link topBarLabel" data-href="#bmstu_prof">О<span class="invis-space">_</span>нас</a>-->
+                <!--</li>-->
+                <li class="nav-item">
+                    <a class="btnLink nav-link topBarLabel" data-href="#teachers_info">Преподаватели</a>
+                </li>
+                <!--<li class="nav-item">-->
+                    <!--<a class="btnLink nav-link topBarLabel" data-href="#edu_info">Особенности<span class="invis-space">-</span>курсов</a>-->
+                <!--</li>-->
+                <li class="nav-item">
+                    <a class="btnLink nav-link topBarLabel" data-href="#theme_plan">Летний<span class="invis-space">-</span>курс<span class="invis-space">-</span>2019</a>
                 </li>
                 <li class="nav-item">
-                    <a class="btnLink nav-link topBarLabel" href="#teachers_info">Преподаватели</a>
+                    <a class="btnLink nav-link topBarLabel" data-href="#theme_plan_full">Основные<span class="invis-space">-</span>курсы</a>
                 </li>
                 <li class="nav-item">
-                    <a class="btnLink nav-link topBarLabel" href="#edu_info">Особенности курсов</a>
-                </li>
-                <li class="nav-item">
-                    <a class="btnLink nav-link topBarLabel" href="#theme_plan">Тематические планы</a>
-                </li>
-                <li class="nav-item">
-                    <a class="btnLink nav-link topBarLabel" href="#contacts">Контакты</a>
+                    <a class="btnLink nav-link topBarLabel" data-href="#contacts">Контакты</a>
                 </li>
             </ul>
+            <button class="btn btn-outline-success my-2 my-sm-0 navBtn" type="submit">Записаться на курс</button>
         </div>
+
     </nav>
 
 
     <div class="main-page page">
         <header class="masthead text-center text-white landing-header">
+            <br>
+            <br>
+            <br>
             <div class="masthead-content">
                 <div class="container">
                     <br>
@@ -140,14 +304,15 @@
             </div>
         </header>
     </div>
-
-    <div id="edu_icon" class="cont" style="background: #1d4d7e; color: white">
         <br>
         <br>
+    <div id="edu_icon" class="cont">
         <br>
         <br>
         <div class="container features">
-            <h2 class="text-center"><i class="fa fa-magic" aria-hidden="true"></i> Чему научим</h2><br>
+            <h2 class="text-center"><i class="fa fa-magic" aria-hidden="true"></i> Чему научим</h2>
+            <br>
+            <br>
             <div style="padding-bottom: 20px" class="row">
                 <div class="col-lg-4 text-center vcenter">
                     <img class="rounded-square" src="./../images/algoritm.png" width="290" height="290">
@@ -203,12 +368,188 @@
         <br>
     </div>
 
-    <div id="bmstu_prof" class="cont" style = "background: #50789f; color: white;">
+    <div id="traectory" class="cont">
         <br>
-        <br>
-        <h2 class="text-center">МГТУ им. Н.Э. Баумана о JDS <i class="fa fa-comment-o" aria-hidden="true"></i></h2>
         <br>
         <div class="container features">
+           <h2 class="text-center"><i class="fa fa-magic" aria-hidden="true"></i> Траектория обучения</h2>
+            <br>
+           <div class="row">
+                <div class="col-lg-12 text-center">
+                   <img class="img-fluid big-img" src="./../images/step-by-step2%20–%203.png" alt="Путь программиста">
+                    <br>
+                    <br>
+                </div>
+           </div>
+            <div id="traectory_bmstuBox" style="padding-bottom: 20px" class="row justify-content-md-center">
+                <div class="col-md-3 text-center imgBox">
+                    <img class="img-fluid" src="./../images/bmstu_logo.png" width="150px" height="150px">
+                </div>
+                <div class="col-md-8">
+                    <p class="lead">
+                         Знания и умения, полученные на курсах программирования JDS, помогут ученику развить алгоритмической мышление.
+                        Ученик будет уметь применять полученные навыки на практике. Инструментарий, освоенный учеником на занятиях, позволит
+                        ему реализовывать сложные проекты, что пригодится ему в старших классах и при поступлении в МГТУ им. Н.Э. Баумана.
+                    </p>
+                </div>
+            </div>
+            <div id="traectory_tpBox" style="padding-bottom: 20px" class="row justify-content-md-center">
+                <div class="col-md-3 text-center imgBox">
+                    <img class="img-fluid" src="./../images/tp3.png" width="300px" height="300px">
+                </div>
+                <div class="col-md-8">
+                    <p class="lead">
+                         Также полученный опыт веб-разработки поможет уже студенту МГТУ им. Н.Э. Баумана при поступлении и обучении на курсах программирования
+                        <a href="http://park.mail.ru"><u>Технопарка Mail.ru</u></a> (совместного образовательного проекта МГТУ им. Н.Э. Баумана и Mail.ru Group)
+                    </p>
+                </div>
+            </div>
+        </div>
+        <br>
+    </div>
+
+    <div id="benefit_info" class="cont">
+        <br>
+        <br>
+        <div class="container features">
+            <h2 class="text-center"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> Наши преимущества</h2>
+            <br>
+            <br>
+            <div class="row align-items-center">
+                <div class="col-lg-1 text-center">
+                </div>
+                <div class="col-lg-2 text-center imgBox">
+                    <img class="img-fluid" src="./../images/benefit_1.png" width="150px" height="150px">
+                </div>
+                <div class="col-lg-8">
+                    <ul type="square">
+                        <li>Преподаватели являются <b class="yellow">выпускниками МГТУ им. Н. Э. Баумана</b> по IT направлениям</li>
+                        <li>Преподаватели являются <b class="yellow">выпускниками проекта “Технопарк”</b> от компании “Mail.ru Group” по направлению “Системный архитектор”</li>
+                        <li>Каждый преподаватель имеет <b class="yellow">большой опыт преподавания</b> программирования, информатики и математики</li>
+                        <li>Преподаватели <b class="yellow">работают в ведущих IT-компаниях</b></li>
+                    </ul>
+                </div>
+                <div class="col-lg-1 text-center">
+                </div>
+            </div>
+            <br>
+            <br>
+            <div class="row align-items-center">
+                <div class="col-lg-1 text-center">
+                </div>
+                <div class="col-lg-2 text-center imgBox">
+                    <img class="img-fluid" src="./../images/benefit_2.png" width="150px" height="150px">
+                </div>
+                <div class="col-lg-8">
+                    <ul type="square">
+                        <li>У каждого ученика есть <b class="yellow">личный кабинет</b>, через который он может просматривать материалы с уроков и общаться с преподавателями</li>
+                        <li>У каждого ученика есть <b class="yellow">доступ к видеофайлам и конспектам</b> по темам каждого урока</li>
+                        <li>У родителей есть возможность <b class="yellow">следить за успеваемостью</b> детей через мобильное приложение</li>
+                    </ul>
+                </div>
+                <div class="col-lg-1 text-center">
+                </div>
+            </div>
+            <br>
+            <br>
+            <div class="row align-items-center">
+                <div class="col-lg-1 text-center">
+                </div>
+                <div class="col-lg-2 text-center imgBox">
+                    <img class="img-fluid" src="./../images/benefit_3.png" width="150px" height="150px">
+                </div>
+                <div class="col-lg-8">
+                    <ul type="square">
+                        <li>
+                            Для проведения занятий используется <b class="yellow">специальное ПО</b>,
+                            которое позволяет визуализировать на экране сложные структуры данных,
+                            что улучшает понимание и запоминание материала учениками
+                        </li>
+                        <li>Содержание курсов согласовано и <b class="yellow">одобрено сотрудниками МГТУ им. Н. Э. Баумана</b></li>
+                    </ul>
+                </div>
+                <div class="col-lg-1 text-center">
+                </div>
+            </div>
+            <br>
+            <br>
+        </div>
+    </div>
+
+    <div id="teachers_info" class="cont">
+        <br>
+        <br>
+        <div class="container features">
+            <h2 class="text-center"><i class="fa fa-university" aria-hidden="true"></i> Наши преподаватели</h2>
+            <br>
+            <div style="padding-bottom: 20px" class="row text-center">
+                <div class="col-lg-6 text-center">
+                    <img class="rounded-circle white-border" src="../images/nina.png" width="180" height="180">
+                    <h4 style="margin-bottom: 20px; margin-top: 20px;"></h4>
+                    <h4><i class="fa fa-graduation-cap" aria-hidden="true"></i> Куклина Нина Ильинична</h4>
+                    <p class="yellow-color" style="text-align: center">
+                        <br>
+                        <i class="fa fa-briefcase" aria-hidden="true"></i> Работаю веб-программистом в компании Mail.ru.
+                        <br>
+                        <br>
+                        <i class="fa fa-university" aria-hidden="true"></i> В 2018 закончила МГТУ им. Н.Э. Баумана по специальности «Информатика и вычислительная техника».
+                        Являюсь выпускницей проекта Технопарк МГТУ им. Н.Э. Баумана и Mail.ru Group по специальности
+                        «Системный архитектор».
+                        <br>
+                        <br>
+                        <i class="fa fa-child" aria-hidden="true"></i> Имею опыт преподавания математики,
+                        информатики и программирования детям.
+                        <br>
+                        <br>
+                        <!--<i class="fa fa-smile-o" aria-hidden="true"></i> -->
+                        <i class="fa fa-paint-brush hobby" aria-hidden="true"></i> Закончила художественную школу с отличием.
+                    </p>
+                    <br>
+                </div>
+
+                <div class="col-lg-6 text-center">
+                    <img class="rounded-circle white-border" src="../images/maxim.png" width="180" height="180">
+                    <h4 style="margin-bottom: 20px; margin-top: 20px;"></h4>
+                    <h4><i class="fa fa-graduation-cap" aria-hidden="true"></i> Колотовкин Максим Ильич</h4>
+                    <p class="yellow-color" style="text-align: center">
+                        <br>
+                        <i class="fa fa-briefcase" aria-hidden="true"></i> Работаю full-stack разработчиком программного обеспечения в компании IBM.
+                        <br>
+                        <br>
+                        <i class="fa fa-university" aria-hidden="true"></i> В 2018 закончил МГТУ им. Н.Э. Баумана
+                        по специальности «Информатика и вычислительная техника». Являюсь выпускником проекта Технопарк
+                        МГТУ им. Н.Э. Баумана и Mail.ru Group по специальности «Системный архитектор».
+                        <br>
+                        <br>
+                        <i class="fa fa-child" aria-hidden="true"></i> Имею большой опыт преподавания программирования детям.
+                        <br>
+                        <br>
+                        <i class="fa fa-futbol-o hobby" aria-hidden="true"></i> Увлекаюсь спортом. В течение 6-ти лет занимался спортивным
+                        самбо. Имею первый взрослый разряд по становой тяге.
+                    </p>
+                    <br>
+                </div>
+            </div>
+
+            <h2 class="text-center"><i class="fa fa-line-chart" aria-hidden="true"></i> Цели преподавания</h2>
+            <br>
+            <div style="padding-bottom: 20px" class="row justify-content-md-center">
+                <div class="col-md-7">
+                    <p class="lead"><i class="fa fa-check" aria-hidden="true"></i> Сформировать у детей алгоритмическое мышление</p>
+                    <p class="lead"><i class="fa fa-check" aria-hidden="true"></i> Заинтересовать детей в изучении программирования и информатики</p>
+                    <p class="lead"><i class="fa fa-check" aria-hidden="true"></i> Передать детям практический опыт в разработке реальных продуктов</p>
+                </div>
+            </div>
+        </div>
+        <br>
+    </div>
+
+    <div id="bmstu_prof" class="cont">
+        <br>
+        <br>
+        <div class="container features">
+            <h2 class="text-center">Представители МГТУ им. Н.Э. Баумана о JDS <i class="fa fa-comment-o" aria-hidden="true"></i></h2>
+            <br>
             <div style="padding-bottom: 20px" class="row text-center">
                 <div class="col-lg-4 text-center">
                     <img class="rounded-circle white-border" src="../images/manB.png" width="150" height="150">
@@ -247,70 +588,15 @@
                     <br>
                 </div>
             </div>
-            <div class="container features">
-                <div class="row">
-                    <div class="col-lg-12 text-center">
-                       <img class="img-fluid big-img" src="./../images/step-by-step3.png" alt="Путь программиста">
-                        <br>
-                        <br>
-                        <br>
-                    </div>
-                </div>
-            </div>
         </div>
     </div>
 
-    <div id="teachers_info" class="cont" style = "background: #1d4d7e; color: white;">
+    <div id="edu_info" class="cont">
         <br>
-        <br>
-        <h2 class="text-center"><i class="fa fa-university" aria-hidden="true"></i> Наши преподаватели</h2>
         <br>
         <div class="container features">
-            <div style="padding-bottom: 20px" class="row text-center">
-                <div class="col-lg-6 text-center">
-                    <img class="rounded-circle white-border" src="../images/nina.png" width="180" height="180">
-                    <h4 style="margin-bottom: 20px; margin-top: 20px;"></h4>
-                    <h4><i class="fa fa-graduation-cap" aria-hidden="true"></i> Куклина Нина Ильинична</h4>
-                    <p style="text-align: center">
-                        Являюсь веб-программистом в компании Mail.ru. Имею опыт преподавания математики,
-                        информатики и программирования детям. Информационные технологии - очень интересное
-                        и востребованным направление в 21-ом веке. И для погружения будущих специалистов в мир IT
-                        важно объяснять основные принципы автоматизации тех или иных процессов из реальной жизни
-                        с помощью алгоритмов и языков программирования. Закончила художественную школу с отличием.
-                        В 2018 закончила МГТУ им. Н.Э. Баумана по специальности «Информатика и вычислительная техника».
-                        Являюсь выпускницей проекта Технопарк МГТУ им. Н.Э. Баумана и Mail.ru Group по специальности
-                        «Системный архитектор».
-
-                    </p>
-                    <br>
-                </div>
-
-                <div class="col-lg-6 text-center">
-                    <img class="rounded-circle white-border" src="../images/maxim.png" width="180" height="180">
-                    <h4 style="margin-bottom: 20px; margin-top: 20px;"></h4>
-                    <h4><i class="fa fa-graduation-cap" aria-hidden="true"></i> Колотовкин Максим Ильич</h4>
-                    <p style="text-align: center">
-                        Являюсь full-stack разработчиком программного обеспечения в компании IBM.
-                        Имею большой опыт преподавания программирования детям. Программирование в
-                        современном мире – это неотъемлемая часть любой сферы деятельности. Считаю,
-                        что самое главное - правильно подать предмет, заинтересовав решением интересных
-                        практических задач. Также увлекаюсь спортом. В течение 6-ти лет занимался спортивным
-                        самбо. Имею первый взрослый разряд по становой тяге. В 2018 закончил МГТУ им. Н.Э. Баумана
-                        по специальности «Информатика и вычислительная техника». Являюсь выпускником проекта Технопарк
-                        МГТУ им. Н.Э. Баумана и Mail.ru Group по специальности «Системный архитектор».
-                    </p>
-                    <br>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div id="edu_info" class="cont" style = "background: #50789f; color: white;">
-        <br>
-        <br>
-        <h2 class="text-center"><i class="fa fa-cubes" aria-hidden="true"></i> Особенности подачи материала</h2>
-        <br>
-        <div class="container features">
+            <h2 class="text-center"><i class="fa fa-cubes" aria-hidden="true"></i> Особенности подачи материала</h2>
+            <br>
             <div style="padding-bottom: 20px" class="row text-center">
                 <div class="col-lg-4 text-center">
                     <img src="../images/algor.png" width="270" height="270" style="border: 2px solid white; border-radius: 5%;">
@@ -359,25 +645,130 @@
         </div>
     </div>
 
-    <div id="theme_plan" class="cont" style = "background: #1d4d7e; color: white;">
+    <div id="theme_plan" class="cont">
+
         <br>
         <br>
-        <h2 class="text-center"><i class="fa fa-list" aria-hidden="true"></i> Тематические планы</h2>
-        <br>
+        <!--<h2 class="text-center"><i class="fa fa-list" aria-hidden="true"></i> Планы программ обучения</h2>-->
+        <!--<br>-->
+        <!--<br>-->
         <div class="container">
-          <div class="accordion" id="accordionExample">
-          <div class="card">
-            <div class="card-header" id="headingOne">
-              <h2 class="mb-0">
-                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                  Основы JavaScript
-                </button>
-              </h2>
+            <h2 class="text-center"><i class="fa fa-keyboard-o" aria-hidden="true"></i> Летний экспресс-курс 2019</h2>
+            <br>
+            <div class="card bg-light green mb-3">
+              <div class="card-body">
+                <h5 class="card-title"><span class="badge badge-primary white-badge"> 1 </span> Введение в веб-разработку</h5>
+                <p class="card-text">
+                  <ul type="square">
+                    <li> Создание первой веб-страницы: основы HTML и CSS</li>
+                    <li> Создание пользовательского интерфейса: формы, поля ввода, кнопки</li>
+                    <li> Изучение понятий программирования: переменная, оператор, ветвление, блок кода и функция</li>
+                    <li> Взаимодействие с формами путем использования языка программирования JavaScript:
+                         получение доступа к элементам по идентификаторам,
+                         получение значений из полей ввода, события загрузки окна и щелчков по кнопке</li>
+                    <li> Изучение базовых арифметических операций и операторов сравнения</li>
+                    <li> Создание секундомера: работа с таймерами на веб-странице </li>
+                  </ul>
+                </p>
+                <p class="card-text"><span class="text-muted"><i class="fa fa-clock-o" aria-hidden="true"></i> 4 академеческих часа</span></p>
+              </div>
+            </div>
+            <div class="card bg-light mb-3">
+              <div class="card-body">
+                <h5 class="card-title"><span class="badge badge-success green-badge"> 2 </span> Основы работы с графикой</h5>
+                <p class="card-text">
+                  <ul type="square">
+                    <li> Изучение основных принципов работы с графическим полем веб-страницы</li>
+                    <li> Рисование базовых примитивов: линий, прямоугольников, окружностей</li>
+                    <li> Создание анимации на основе таймеров и графического поля</li>
+                    <li> Изучение понятий программирования: цикл, массив, строка</li>
+                    <li> Обработка программных событий взаимодействия с клавиатурой и мышкой</li>
+                  </ul>
+                </p>
+                <p class="card-text"><span class="text-muted"><i class="fa fa-clock-o" aria-hidden="true"></i> 4 академеческих часа</span></p>
+              </div>
             </div>
 
-            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+            <div class="card bg-light green mb-3">
               <div class="card-body">
-                  <ul type = "square">
+                <h5 class="card-title"><span class="badge badge-primary white-badge"> 3 </span> Изучение принципов разработки игровой механики (часть 1)</h5>
+                <p class="card-text">
+                  <ul type="square">
+                    <li> Реализация хранения врагов и бонусов в различных структурах данных</li>
+                    <li> Реализация искусственного интеллекта врагов на основе переменных, циклов, массивов и функций</li>
+                    <li> Реализация управления главным героем с помощью клавиатуры, мышки и событий щелчков по кнопкам</li>
+                    <li> Реализация проверки столкновений объектов в игре с помощью применения математических законов</li>
+                  </ul>
+                </p>
+                <p class="card-text"><span class="text-muted"><i class="fa fa-clock-o" aria-hidden="true"></i> 4 академеческих часа</span></p>
+              </div>
+            </div>
+            <div class="card bg-light mb-3">
+              <div class="card-body">
+                <h5 class="card-title"><span class="badge badge-success green-badge"> 4 </span> Изучение принципов разработки игровой механики (часть 2)</h5>
+                <p class="card-text">
+                  <ul type="square">
+                    <li> Реализация стрельбы: использование тригонометрии в программировании</li>
+                    <li> Создание нескольких видов оружия, врагов и бонусов</li>
+                    <li> Создание счетчика жизней, счетчика патронов и счетчика количества собранных бонусов</li>
+                    <li> Реализация возможности перезапуска игры в случае победы или поражения: углубленное изучение событий окна браузера</li>
+                  </ul>
+                </p>
+                <p class="card-text"><span class="text-muted"><i class="fa fa-clock-o" aria-hidden="true"></i> 4 академеческих часа</span></p>
+              </div>
+            </div>
+
+            <div class="card bg-light green mb-3">
+              <div class="card-body">
+                <h5 class="card-title"><span class="badge badge-primary white-badge"> 5 </span> Постоянное хранение данных и создание многостраничного приложения</h5>
+                <p class="card-text">
+                  <ul type="square">
+                    <li> Изучение структуры данных “ключ-значение”</li>
+                    <li> Создание таблицы рекордов: изучение принципов работы с постоянным браузерным хранилищем</li>
+                    <li> Использование ссылок для перехода между страницами</li>
+                    <li> Создание главного меню для игры</li>
+                  </ul>
+                </p>
+                <p class="card-text"><span class="text-muted"><i class="fa fa-clock-o" aria-hidden="true"></i> 4 академеческих часа</span></p>
+              </div>
+            </div>
+            <div class="card bg-light mb-3">
+              <div class="card-body">
+                <h5 class="card-title"><span class="badge badge-success green-badge"> 6 </span> Заключительное занятие</h5>
+                <p class="card-text">
+                  <ul type="square">
+                    <li> Доработка дизайна и функциональности игры</li>
+                    <li> Публикация созданной игры в Интернете: изучение возможностей сервиса Github</li>
+                    <li> Разбор распространенных ошибок</li>
+                    <li> Обзор популярных библиотек JavaScript</li>
+                    <li> Обзор современных тенденций и течений в области веб-программирования</li>
+                  </ul>
+                </p>
+                <p class="card-text"><span class="text-muted"><i class="fa fa-clock-o" aria-hidden="true"></i> 4 академеческих часа</span></p>
+              </div>
+            </div>
+        </div>
+        <br>
+        <br>
+    </div>
+
+    <div id="theme_plan_full" class="cont">
+        <br>
+        <br>
+        <div class="container">
+            <h2 class="text-center"><i class="fa fa-list" aria-hidden="true"></i> Основные учебные курсы</h2>
+            <br>
+            <br>
+            <h4 class="text-left">Курс: Базовый курс JavaScript</h4>
+            <br>
+            <div class="card">
+              <div class="card-header course1-header">
+                <img src="./../images/course1.png" class="card-img-top course1-header" alt="...">
+              </div>
+              <div class="card-body course1-body">
+                <h5 class="card-title">Основы языка JavaScript (JS)</h5>
+                <p class="card-text">
+                    <ul type = "square">
                       <li>Установка NodeJS и запуск скриптов</li>
                       <li>Изучение Git и GitHub</li>
                       <li>Переменные (числовые, строковые, логические)</li>
@@ -388,67 +779,50 @@
                       <li>Объекты. Массивы объектов</li>
                       <li>Функции. Передача аргументов. Функции обратного вызова</li>
                   </ul>
-              </div>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card-header" id="headingTwo">
-              <h2 class="mb-0">
-                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
-                  Взаимодействие Web и JS
-                </button>
-              </h2>
-            </div>
-
-            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-              <div class="card-body">
-                  <ul type = "square">
-                      <li>Основы HTML. Теги: span, p, b, i, strike, a, table, br, div, h1-h6, img</li>
-                      <li>Основы CSS: идентификаторы, классы, изменение цветов, шрифтов и позиционирование; События: hover, focus</li>
-                      <li>Специальные теги для работы с формами: input, button, select</li>
-                      <li>Обращение к элементам форм по ID и именам классов</li>
-                      <li>Получение данных из форм. Запись данных в формы. Преобразование типов данных. Команда split</li>
-                      <li>Многостраничные приложения</li>
-                      <li>Изучение LocalStorage для хранения данных на клиенте</li>
-                      <li>Формат JSON</li>
+                </p>
+                <h5 class="card-title">Взаимодействие Web и JS</h5>
+                <p class="card-text">
+                    <ul type = "square">
+                      <li>Установка NodeJS и запуск скриптов</li>
+                      <li>Изучение Git и GitHub</li>
+                      <li>Переменные (числовые, строковые, логические)</li>
+                      <li>Арифметические операции</li>
+                      <li>Логические операции: И, ИЛИ, НЕ. Конструкция ЕСЛИ … ТО</li>
+                      <li>Циклы FOR и WHILE</li>
+                      <li>Массивы</li>
+                      <li>Объекты. Массивы объектов</li>
+                      <li>Функции. Передача аргументов. Функции обратного вызова</li>
                   </ul>
+                </p>
+
+
+                <!--<a href="#" class="btn btn-primary">Go somewhere</a>-->
               </div>
             </div>
-          </div>
-          <div class="card">
-            <div class="card-header" id="headingThree">
-              <h2 class="mb-0">
-                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
-                  2D-графика в браузере
-                </button>
-              </h2>
-            </div>
 
-            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-              <div class="card-body">
-                  <ul type = "square">
+            <br>
+            <br>
+            <h4 class="text-left">Курс: Разработка игр на JavaScript</h4>
+            <br>
+            <div class="card">
+              <div class="card-header course2-header">
+                <img src="./../images/course2.png" class="card-img-top course2-header" alt="...">
+              </div>
+              <div class="card-body course2-body">
+                <h5 class="card-title">2D-графика в браузере</h5>
+                <p class="card-text">
+                    <ul type = "square">
                       <li>Анимация с помощью setInterval и CSS</li>
                       <li>Анимация на основе jQuery</li>
                       <li>Основы Canvas: линии, окружности, прямоугольники, импорт изображений</li>
                       <li>Анимация на основе Canvas</li>
                       <li>События клавиатуры</li>
                       <li>Создание нескольких 2D игр</li>
-                  </ul>
-              </div>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card-header" id="headingFour">
-              <h2 class="mb-0">
-                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
-                  3D-графика в браузере
-                </button>
-              </h2>
-            </div>
-
-            <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
-              <div class="card-body">
-                  <ul type = "square">
+                    </ul>
+                </p>
+                <h5 class="card-title">3D-графика в браузере</h5>
+                <p class="card-text">
+                    <ul type = "square">
                       <li>Основы ThreeJS: сцена, камера, вспомогательные оси, позиционирование и углы поворота</li>
                       <li>Создание примитивов: плоскость, куб, сфера, пирамида. Перемещение объектов и их вращение</li>
                       <li>Свет и текстурирование</li>
@@ -456,22 +830,26 @@
                       <li>Щелчки в трехмерном пространстве</li>
                       <li>Анимация с помощью setInterval</li>
                       <li>Создание нескольких 3D игр</li>
-                  </ul>
+                    </ul>
+                </p>
+
+
+                <!--<a href="#" class="btn btn-primary">Go somewhere</a>-->
               </div>
             </div>
-          </div>
-          <div class="card">
-            <div class="card-header" id="headingFive">
-              <h2 class="mb-0">
-                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
-                  Работа с сетью
-                </button>
-              </h2>
-            </div>
 
-            <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
-              <div class="card-body">
-                  <ul type = "square">
+            <br>
+            <br>
+            <h4 class="text-left">Курс: Веб-разработка на JavaScript</h4>
+            <br>
+            <div class="card">
+              <div class="card-header course3-header">
+                <img src="./../images/course3.png" class="card-img-top course3-header" alt="...">
+              </div>
+              <div class="card-body course3-body">
+                <h5 class="card-title">Работа с сетью</h5>
+                <p class="card-text">
+                    <ul type = "square">
                       <li>Работа с Express: запуск сервера</li>
                       <li>Получение GET и POST запросов</li>
                       <li>Отправка форм с помощью Submit. Использование AJAX</li>
@@ -480,65 +858,38 @@
                       <li>Создание сессий. Работа с базовыми заголовками</li>
                       <li>Управление кешированием</li>
                       <li>Использование библиотеки Request: отправка запросов с одного сервера на другой</li>
-                      <li>Разработка микросервисной архитектуры</li>
-                  </ul>
-              </div>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card-header" id="headingSix">
-              <h2 class="mb-0">
-                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="true" aria-controls="collapseSix">
-                  Усложненная работа с сетью
-                </button>
-              </h2>
-            </div>
-
-            <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordionExample">
-              <div class="card-body">
-                  <ul type = "square">
+                      <li>Использование шаблонизаторов</li>
+                    </ul>
+                </p>
+                <h5 class="card-title">Усложненная работа с сетью</h5>
+                <p class="card-text">
+                    <ul type = "square">
                       <li>Использование веб-сокетов WS</li>
                       <li>Создание real-time мессенджера</li>
+                      <li>Изучение принципов построения реляционных структур данных</li>
                       <li>Основы SQL</li>
                       <li>Создание трехзвенной архитектуры</li>
-                  </ul>
-              </div>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card-header" id="headingSeven">
-              <h2 class="mb-0">
-                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="true" aria-controls="collapseSeven">
-                  Дополнительные модули
-                </button>
-              </h2>
-            </div>
+                      <li>Реализация микросервисной архитектуры</li>
+                      <li>Проектирование и разработка высоконагруженных систем</li>
+                    </ul>
+                </p>
 
-            <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordionExample">
-              <div class="card-body">
-                  <ul type = "square">
-                      <li>Фреймворк Electron для создания desktop приложений</li>
-                      <li>Создание одностраничных приложений SPA на нативном JavaScript</li>
-                      <li>Изучение фреймворка Bootstrap</li>
-                      <li>Использование сборщика Webpack</li>
-                      <li>Создание приложений с помощью React</li>
-                  </ul>
+
+                <!--<a href="#" class="btn btn-primary">Go somewhere</a>-->
               </div>
             </div>
-          </div>
-        </div>
         </div>
         <br>
         <br>
         <br>
     </div>
 
-    <div id="contacts" class="cont" style = "background: #50789f; color: white;">
+    <div id="contacts" class="cont">
         <br>
-        <br>
-        <h2 class="text-center"><i class="fa fa-address-book-o" aria-hidden="true"></i> Контактная информация</h2>
         <br>
         <div class="container features">
+            <h2 class="text-center"><i class="fa fa-address-book-o" aria-hidden="true"></i> Контактная информация</h2>
+            <br>
             <div class="row align-items-center">
                 <div class="col-lg-4 text-center">
                     <a href="https://yandex.ru/maps/?um=constructor%3Ae1a90565b1da105a9926a3773431a967349325dbdd85b3fd95e841748be374ae&amp;source=constructorStatic" target="_blank">
@@ -587,6 +938,39 @@
                     </p>
                 </div>
             </div>
+            <div class="row align-items-center carousel-box">
+                <br>
+                <p class="lead text-center">
+                    Занятия проходят на территории главного учебного корпуса МГТУ им. Н.Э. Баумана,
+                    в аудиториях совместного образовательного проекта "Технопарк" МГТУ им. Н.Э. Баумана и Mail.ru Group
+                </p>
+                <div id="carouselExampleIndicators" class="carousel slide col-lg-12 text-center" data-ride="carousel">
+              <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+              </ol>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="./../images/bmstu_aud.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="./../images/tp_aud1.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="./../images/tp_aud2.png" class="d-block w-100" alt="...">
+                </div>
+              </div>
+              <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+            </div>
         </div>
         <br>
     </div>
@@ -603,6 +987,8 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+
+<script src="./../js/main.js"></script>
 
 </body>
 </html>
